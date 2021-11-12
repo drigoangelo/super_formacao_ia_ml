@@ -1,0 +1,12 @@
+name: "Super Formação Inteligência Artificial e Machine Learning"
+output_dir: "docs"
+navbar:
+  title: "IA e ML"
+  left:
+  - text: "Home"
+    href: index.html
+  - text: "R"
+    href: speed-and-distance.html
+output:
+  html_document:
+theme: minimal

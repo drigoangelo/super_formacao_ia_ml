@@ -1,0 +1,60 @@
+---
+title: "Tabu Search"
+---
+
+
+
+Neste post, irei aplicar o método de busca Tabu Search na busca da solução ótima de um problema do caixeiro viajante.
+
+# Problema do caixeiro viajante
+
+O problema do caixeiro-viajante consiste na procura de um circuito que possua a menor distância, começando numa cidade qualquer, entre várias, visitando cada cidade precisamente uma vez e regressando à cidade inicial. [[1]](https://pt.wikipedia.org/wiki/Problema_do_caixeiro-viajante)
+
+Para este exemplo, nosso caixeiro viajante deverá passar por todas as cidades da região do Triângulo Mineiro, representada no mapa abaixo.
+
+![Figura 1: Mapa da região do Triângulo Mineiro e Alto Paranaíba [[2]](https://www-geografia.blogspot.com/2020/04/triangulo-mineiro-minas-gerais.html)](mapa_triangulo_mineiro.PNG) 
+
+A região do Triângulo é formada por 35 municípios, listados abaixo [[3]](https://www.mg.gov.br/conteudo/conheca-minas/geografia/regioes-de-planejamento):
+
+* Água Comprida
+* Araguari
+* Araporã
+* Cachoeira Dourada
+* Campina Verde
+* Campo Florido
+* Canápolis
+* Capinópolis
+* Carneirinho
+* Cascalho Rico
+* Centralina
+* Comendador Gomes
+* Conceição das Alagoas
+* Conquista
+* Delta
+* Fronteira
+* Frutal
+* Gurinhatã
+* Indianópolis
+* Ipiaçu
+* Itapajipe
+* Ituiutaba
+* Iturama
+* Limeira do Oeste
+* Monte Alegre de Minas
+* Pirajuba
+* Planura
+* Prata
+* Santa Vitória
+* São Francisco de Sales
+* Tupaciguara
+* Uberaba
+* Uberlândia
+* União de Minas
+* Veríssimo
+
+# Buscando as distâncias entre as cidades do Triângulo Mineiro
+
+Agora precisamos saber as distâncias entre essas cidades. Para isso, vamos fazer as consltas no site http://www.distanciasentrecidades.com/ e buscar as informações usando o Selenium.
+
+
+
